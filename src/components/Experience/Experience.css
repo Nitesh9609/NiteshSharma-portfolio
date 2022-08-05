@@ -1,0 +1,107 @@
+.experience{
+    text-align: center;
+}
+
+.skills_des{
+    margin-top: 10vh;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-gap: 8rem;
+    text-align: center;
+    width: min-content;
+}
+
+
+
+.skills_des div{
+    /* border: 2px solid; */
+}
+
+.frontend{
+    background: var(--color-bg-variant);
+    border-radius: 20px;
+    
+}
+
+.frontend div{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    text-align: left;
+    margin: 0.5rem 0 0.5rem 1rem;
+
+}
+
+
+
+.backend{
+    
+    background: var(--color-bg-variant);
+    border-radius: 20px;
+}
+
+.backend div{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    text-align: left;
+    margin: 0.5rem 0 0 1rem;
+}
+
+/* ================== MEDIA QUERY (MEDIUM DEVICE) ===================== */
+
+@media screen and (max-width: 1024px){
+
+    .skills_des{
+        margin-top: 5vh;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        display: grid;
+        grid-template-columns: 450px 450px;
+        grid-gap: 3rem;
+        text-align: center;
+        width: min-content;
+    }
+
+    .frontend div{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        text-align: left;
+        margin: 0.5rem 0 0.5rem 1rem;
+    
+    }
+}
+
+/* ================== MEDIA QUERY (SMALL DEVICE) ===================== */
+
+@media screen and (max-width: 604px){
+    .skills_des{
+        
+        display: grid;
+        grid-template-columns: 300px ;
+        grid-gap: 3rem;
+        text-align: center;
+        width: max-content;
+    }
+
+    .frontend div{
+        display: grid;
+        grid-template-columns: 200px ;
+        text-align: left;
+        margin: 0.5rem 0 0.5rem 1rem;
+    
+    }
+
+    .backend div{
+        display: grid;
+        grid-template-columns: 200px ;
+        text-align: left;
+        margin: 0.5rem 0 0 1rem;
+    }
+
+    .backend{
+        height: 35vh;
+    }
+}

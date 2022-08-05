@@ -1,0 +1,47 @@
+.container{
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.btn{
+    margin: 10px;
+    
+}
+
+.media{
+    position: absolute;
+    top: 50vh;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.media a{
+    color: var(--color-primary);
+}
+
+.img1{
+    margin-top: 5vh;
+    background-color: var(--color-primary);
+    border-top-right-radius: 25rem;
+    border-top-left-radius: 25rem;
+    
+}
+
+/* ================== MEDIA QUERY (MEDIUM DEVICE) ===================== */
+
+@media screen and (max-width: 1024px){
+
+}
+
+/* ================== MEDIA QUERY (SMALL DEVICE) ===================== */
+
+@media screen and (max-width: 604px){
+    .media a{
+        display: none;
+    }
+
+    .img1{
+        width: 50%;
+    }
+}

@@ -1,0 +1,80 @@
+#about{
+    margin-top: 50px;
+    
+}
+
+.about_heading{
+    text-align: center;
+}
+
+#about div{
+    /* border: 2px solid black; */
+}
+
+.about_body{
+    display: grid;
+    grid-template-columns: 35% 45%;
+    grid-gap: 15rem;
+    transform: translate(-50%);
+    width: min-content;
+    position: relative;
+    left: 50%;
+}
+
+/* .about_body_2{
+    display: grid;
+    grid-auto-rows: 200px;
+}*/
+
+.blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin: 100px 0 50px 0px;
+} 
+
+.blocks div{
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    border-radius: 10px ;
+    background: var(--color-bg-variant);
+}
+
+.chat_btn{
+    margin-top: 5vh;
+}
+
+.chat_btn button{
+    margin: 0 !important;
+}
+
+h6, .note{
+    color: var( --color-light);
+}
+
+/* ================== MEDIA QUERY (MEDIUM DEVICE) ===================== */
+
+@media screen and (max-width: 1024px){
+    .img2{
+        display: none;
+    }
+
+    .about_body{
+        display: block;
+        margin-top: -50px;
+        margin-bottom: 30px;
+        width: 50%;
+    }
+
+}
+
+/* ================== MEDIA QUERY (SMALL DEVICE) ===================== */
+
+@media screen and (max-width: 604px){
+    .about_body{
+        display: block;
+        margin-top: -50px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}

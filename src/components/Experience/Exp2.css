@@ -1,0 +1,7 @@
+.content h5{
+    margin-left: 1.5rem;
+}
+
+.content h3{
+    color: var(--color-primary);
+}

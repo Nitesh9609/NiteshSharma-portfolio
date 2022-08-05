@@ -1,0 +1,120 @@
+#contact{
+    margin-top: 30px;
+}
+
+.contactMe_header{
+    text-align: center;
+}
+
+.contact_div{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%); 
+    width: min-content;  
+    grid-gap: 5vw;
+    margin-top: 10vh;
+}
+
+.contact_div div{
+    /* border: 1px solid; */
+}
+
+.contact_methods{
+    
+    display: grid;
+    grid-template-rows: 110px 110px;
+    text-align: center;
+    grid-gap: 30px;
+}
+
+.contact_methods a h5{
+    color: var(--color-primary);
+}
+
+.contact_methods div{
+    background: var(--color-bg-variant);
+    border-radius: 20px;
+    
+}
+
+.contact_methods h5{
+    margin: 0 5px 0 5px;
+}
+
+.contact_methods h3{
+    margin-top: 10px;
+}
+
+.contact_form{
+    display: grid;
+    grid-template-rows : 1fs;
+    grid-gap: 20px;
+    
+}
+
+input{
+    padding: 20px;
+    width: 30vw;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-bg-variant);
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+textarea{
+    width: 30vw;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-bg-variant);
+    border-radius: 20px;
+    color: aliceblue;
+    padding: 20px;
+}
+
+textarea::placeholder{
+    
+    color: white;
+}
+
+input::placeholder{
+    color: aliceblue;
+}
+
+/* ================== MEDIA QUERY (MEDIUM DEVICE) ===================== */
+
+@media screen and (max-width: 1024px){
+    .contact_div{
+        grid-gap: 15vw;
+        margin-top: 10vh;
+    }
+}
+
+
+/* ================== MEDIA QUERY (SMALL DEVICE) ===================== */
+
+
+
+@media screen and (max-width: 604px){
+    .contact_div{
+        display: grid;
+        grid-template-columns: 200px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%); 
+        width: min-content;  
+        grid-gap: 5vw;
+        margin-top: 5vh;
+    }
+
+    input{
+        
+        width: 60vw;
+        
+    }
+    textarea{
+        width: 60vw;
+        
+    }
+}
+

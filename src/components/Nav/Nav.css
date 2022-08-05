@@ -1,0 +1,41 @@
+nav{
+    background: rgba(0,0,0,0.3);
+    padding: 1px;
+    position: fixed;
+    text-decoration: none;
+    width: max-content;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 2rem;
+    display: block;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(10px);
+}
+
+.icon{
+    background: transparent;
+    margin: 1rem;
+}
+
+.aa{
+    color: var(--color-primary);
+    text-decoration: none;
+    margin: 10px;
+    padding: 0.9rem;
+    background: transparent;
+    border-radius: 50%;
+    display: flex;
+}
+
+
+.aa:hover{
+    background: rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 604px){
+    .nav{
+        display: none;
+    }
+}
