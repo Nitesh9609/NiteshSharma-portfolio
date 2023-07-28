@@ -5,7 +5,7 @@ import './About.css'
 var data = [
   {
       "name": "Experience",
-      "note": "6 month Working"
+      "note": "12 months Working"
   },
   {
       "name": "Clients",
